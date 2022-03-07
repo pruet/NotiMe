@@ -1,0 +1,5 @@
+[LINE]
+AccessToken = YOUR_LINE_NOTIFICATION_ACCESS_TOKEN
+SendByDefault = True
+[WRITE]
+SendByDefault = False
