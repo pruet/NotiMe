@@ -61,16 +61,17 @@ def main():
 		sent = False
 
 		# Send write notify
-		if config.get('WRITE', 'SendByDefault', vars=None) == True or args.write == True:
+		if config.get('WRITE', 'SendByDefault', vars=None) == 'True' or args.write == True:
 			if platform == 'linux' or platform == 'linux2':
 				send_write_notify(args.message)
 				sent = True	
 
 		# Send line notify
-		if config.get('LINE', 'SendByDefault', vars=None) == True or args.line == True:
+		if config.get('LINE', 'SendByDefault', vars=None) == 'True' or args.line == True:
 			line_api_token = config.get('LINE', 'AccessToken', vars=None)
 			send_line_notify(args.message, line_api_token)
 			sent = True
+
 		if not sent:
 			print('Error: No notification channel specified.')	
 

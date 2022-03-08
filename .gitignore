@@ -1,1 +1,4 @@
 .vscode/launch.json
+dist/
+src/NotiMe.egg-info
+src/NotiMe_pruet.egg-info
