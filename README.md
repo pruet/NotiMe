@@ -1,5 +1,5 @@
 # NotiMe
-This program send a notify to user through many channels.
+This program sends a notify to user through many channels. Currently, it supports Line (the must for Thai people, sadly) and write. Plan to support Microsoft Teams, email, telegram, (universal) webhook in the future. Pull requests are welcome. 
 
 ## Prerequisites
 ### Line
